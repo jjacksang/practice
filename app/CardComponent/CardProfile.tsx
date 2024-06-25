@@ -1,8 +1,9 @@
 import Link from "next/link";
+import { CardLayout } from "../component/CardLayout";
 
 export const Profile = () => {
     return (
-        <div className="flex flex-col p-4 border rounded-xl w-[32rem] h-[32rem] divide-y relative">
+        <CardLayout>
             <div className="flex flex-col text-lg font-bold gap-1">
                 <span>진상우</span>
                 <span>Front-end</span>
@@ -31,9 +32,15 @@ export const Profile = () => {
                     </li>
                 </ol>
             </div>
-            <div>
+            <div className="flex flex-col mt-4">
                 <span className="text-xl font-bold text-blue-600">My Core Values</span>
+                <span className="flex flex-col pl-2">
+                    <span className="font-bold ">Keyword: </span>용기, 꾸준함, 목표의식, 리더쉽,
+                    평정심
+                    <span className="font-bold ">Skills: </span>React, Javascript, CSS3, Typescript,
+                    NextJS, Tailwindcss
+                </span>
             </div>
-        </div>
+        </CardLayout>
     );
 };

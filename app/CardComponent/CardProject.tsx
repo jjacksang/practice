@@ -1,13 +1,14 @@
 import Link from "next/link";
+import { CardLayout } from "../component/CardLayout";
 
 export const Project = () => {
     return (
-        <div className="w-[32rem] h-[32rem] border rounded-xl divide-y">
+        <CardLayout>
             <span className="flex justify-center text-xl py-2 font-bold">Project List</span>
             <div className="px-4 py-2">
                 <ul className="list-disc px-2 font-lg">
-                    <div className="mb-2">
-                        <li className="py-1">Yogiyo-clone Project</li>
+                    <div>
+                        <li className="py-1 font-bold text-lg">Yogiyo-clone Project</li>
                         <ol className="font-sm">프로젝트 소개 : Yogiyo-Admin Clone Coding</ol>
                         <ol className="font-sm">소요기간 : 2024-01-20 ~ 2024-06-07</ol>
                         <ol className="font-sm">프로젝트 인원 : Front-end 2명 Back-end 2명</ol>
@@ -26,7 +27,7 @@ export const Project = () => {
                             해당 프로젝트 보기
                         </Link>
                     </div>
-                    <li className="py-1">나만의 감정 일기장</li>
+                    <li className="py-1 font-bold text-lg">나만의 감정 일기장</li>
                     <ol className="font-sm">
                         프로젝트 소개 : 한입 리액트 수강 및 리액트 동작 학습
                     </ol>
@@ -41,6 +42,6 @@ export const Project = () => {
                     </Link>
                 </ul>
             </div>
-        </div>
+        </CardLayout>
     );
 };
