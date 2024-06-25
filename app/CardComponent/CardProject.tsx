@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { CardLayout } from "../component/CardLayout";
+import { ListComponent } from "../component/ListComponent";
 
-export const Project = () => {
+export const CardProject = () => {
     return (
         <CardLayout>
             <span className="flex justify-center text-xl py-2 font-bold">Project List</span>
             <div className="px-4 py-2">
-                <ul className="list-disc px-2 font-lg">
+                <ListComponent>
                     <div>
                         <li className="py-1 font-bold text-lg">Yogiyo-clone Project</li>
                         <ol className="font-sm">프로젝트 소개 : Yogiyo-Admin Clone Coding</ol>
@@ -40,7 +41,7 @@ export const Project = () => {
                     >
                         해당 프로젝트 보기
                     </Link>
-                </ul>
+                </ListComponent>
             </div>
         </CardLayout>
     );

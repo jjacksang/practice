@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { CardLayout } from "../component/CardLayout";
+import { ListComponent } from "../component/ListComponent";
 
-export const Profile = () => {
+export const CardProfile = () => {
     return (
         <CardLayout>
             <div className="flex flex-col text-lg font-bold gap-1">
@@ -17,7 +18,7 @@ export const Profile = () => {
             />
             <div className="mt-4">
                 <span className="text-xl font-bold text-blue-600">About Me</span>
-                <ol className="flex flex-col px-4 my-2 list-disc gap-2">
+                <ListComponent>
                     <p className="mt-2 text-xl text-black w-fit border rounded-xl bg-white py-1 px-2 ">
                         나의 프로젝트 리스트
                     </p>
@@ -30,7 +31,7 @@ export const Profile = () => {
                     <li>
                         <Link href="">Learn Next.Js NomardCoder Clone Coding</Link>
                     </li>
-                </ol>
+                </ListComponent>
             </div>
             <div className="flex flex-col mt-4">
                 <span className="text-xl font-bold text-blue-600">My Core Values</span>
